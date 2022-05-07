@@ -20,5 +20,5 @@ var Event = [
     "Transfer(address,address,uint256)",
     "Approval(address,address,uint256)"];
 for (let i = 0; i < Event.length; i++) {
-    console.log('The event name is:' + Event[i] + ', ' + 'convert result is: ' + web3.eth.abi.encodeFunctionSignature(Event[i]));
+    console.log('The event name is:' + Event[i] + ', ' + 'convert result is: ' + web3.eth.abi.encodeEventSignature(Event[i]));
 }
